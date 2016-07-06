@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400");
+/* line 5, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("font/Raleway-Regular.ttf");
+}
+/* ======= Typography */
+/* line 2, ../../dev/sass/_typography.sass */
+p {
+  font-size: 1.4rem;
+  line-height: 2.24rem;
+  color: #6c7279;
+}
+
+/* line 7, ../../dev/sass/_typography.sass */
+h1 {
+  font-size: 2.2rem;
+  color: #2d3033;
+}
+
+/* line 11, ../../dev/sass/_typography.sass */
+h2 {
+  font-size: 1.6rem;
+  color: #2d3033;
+}
+
+/* line 15, ../../dev/sass/_typography.sass */
+h3 {
+  font-size: 1.5rem;
+  color: #2d3033;
+  font-weight: 400;
+}
+
+/* line 20, ../../dev/sass/_typography.sass */
+h4 {
+  font-size: 1.4rem;
+  color: #2d3033;
+  font-weight: 400;
+}
+
+/* line 25, ../../dev/sass/_typography.sass */
+h5 {
+  font-size: 1.4rem;
+  color: #2d3033;
+  font-weight: 400;
+}
+
+/*==========  GLOBAL STYLES  ========== */
+/* line 10, ../../dev/sass/style.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 12, ../../dev/sass/style.sass */
+body {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+  background-color: #f7f7f7;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 19, ../../dev/sass/style.sass */
+.wrapper {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* line 21, ../../dev/sass/style.sass */
+.section {
+  padding: 2rem 0 6rem 0;
+}
+
+/* line 23, ../../dev/sass/style.sass */
+.link {
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* line 27, ../../dev/sass/style.sass */
+.block_wrapper {
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+/* line 32, ../../dev/sass/style.sass */
+.btn {
+  background: 0 0;
+  border: none;
+  border-radius: 2px;
+  color: #000;
+  height: 36px;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: background-color 0.2s;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* line 49, ../../dev/sass/style.sass */
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+/*==========  HEADER STYLES  ========== */
+/* line 54, ../../dev/sass/style.sass */
+.header {
+  padding: 2rem 0;
+}
+
+/* line 56, ../../dev/sass/style.sass */
+.header__mnu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
+  width: 100%;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 64, ../../dev/sass/style.sass */
+.mnu-logo {
+  -webkit-flex: 1 0 200px;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+}
+
+/* line 66, ../../dev/sass/style.sass */
+.mnu-logo__img {
+  max-width: 100px;
+}
+
+/* line 68, ../../dev/sass/style.sass */
+.nav {
+  -webkit-flex: 2 0 200px;
+      -ms-flex: 2 0 200px;
+          flex: 2 0 200px;
+}
+
+/* line 70, ../../dev/sass/style.sass */
+.mnu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
+}
+
+/* line 76, ../../dev/sass/style.sass */
+.mnu__item {
+  -webkit-flex: 1 0 60px;
+      -ms-flex: 1 0 60px;
+          flex: 1 0 60px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+/* line 83, ../../dev/sass/style.sass */
+.mnu__item_center {
+  text-align: center;
+}
+
+/* line 85, ../../dev/sass/style.sass */
+.mnu__item__link {
+  color: #333;
+}
+/* line 87, ../../dev/sass/style.sass */
+.mnu__item__link:hover {
+  opacity: 0.5;
+}
+
+/* line 89, ../../dev/sass/style.sass */
+.header__mnu_mobile {
+  display: none;
+}
+
+/*==========  HERO STYLES  ========== */
+/* line 94, ../../dev/sass/style.sass */
+.section_hero {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 97, ../../dev/sass/style.sass */
+.hero-title {
+  font-size: 7rem;
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+}
+
+/*==========  PORTFOLIO STYLES  ========== */
+/* line 103, ../../dev/sass/style.sass */
+.mnu_portfolio {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  border-top: 1px solid #e1e1e1;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* line 108, ../../dev/sass/style.sass */
+.portfolio__items {
+  position: relative;
+  width: 100.1%;
+  height: 1050px;
+}
+/* line 113, ../../dev/sass/style.sass */
+.portfolio__items:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 117, ../../dev/sass/style.sass */
+.portfolio__item, .portfolio_sizer {
+  width: 33.333%;
+}
+
+/* line 119, ../../dev/sass/style.sass */
+.portfolio__item, .portfolio__item_default {
+  height: 280px;
+  display: block;
+  cursor: pointer;
+  float: left;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+/* line 128, ../../dev/sass/style.sass */
+.portfolio__item:hover .portfolio__item_overlay, .portfolio__item_default:hover .portfolio__item_overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 131, ../../dev/sass/style.sass */
+.portfolio__item:hover .portfolio__item_overlay:hover .overlay__title, .portfolio__item_default:hover .portfolio__item_overlay:hover .overlay__title {
+  visibility: visible;
+}
+
+/* line 133, ../../dev/sass/style.sass */
+.portfolio__item_big-horizontal {
+  width: 66.666%;
+}
+
+/* line 135, ../../dev/sass/style.sass */
+.portfolio__item_big-vertical {
+  height: 560px;
+}
+
+/* line 137, ../../dev/sass/style.sass */
+.portfolio__item_overlay {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+/* line 143, ../../dev/sass/style.sass */
+.overlay__title {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  visibility: hidden;
+  color: #fff;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 151, ../../dev/sass/style.sass */
+.portfolio__item__img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 156, ../../dev/sass/style.sass */
+.portfolio__img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+/*==========  WE-DO STYLES  ========== */
+/* line 163, ../../dev/sass/style.sass */
+.we-do__item {
+  text-align: center;
+  -webkit-flex-basis: 280px;
+      -ms-flex-preferred-size: 280px;
+          flex-basis: 280px;
+  padding: 1rem;
+}
+
+/* line 167, ../../dev/sass/style.sass */
+.we-do__item__icon {
+  margin: 2rem 0 4rem;
+  font-size: 3rem;
+  color: #dddddd;
+}
+
+/* line 171, ../../dev/sass/style.sass */
+.we-do__item__title {
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+
+/* line 174, ../../dev/sass/style.sass */
+.we-do__item__subtitle {
+  text-transform: none;
+}
+
+/*==========  ABOUT STYLES  ========== */
+/* line 178, ../../dev/sass/style.sass */
+.section_about {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 185, ../../dev/sass/style.sass */
+.section__block {
+  -webkit-flex: 1 0 300px;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+  padding: 9rem;
+}
+
+/* line 188, ../../dev/sass/style.sass */
+.section__block_dark {
+  background-color: #2a2a2a;
+}
+
+/* line 190, ../../dev/sass/style.sass */
+.section__block_turquoise {
+  background-color: #50bab6;
+}
+
+/* line 192, ../../dev/sass/style.sass */
+.section__block_lightgrey {
+  background-color: #f1f1f1;
+}
+
+/* line 194, ../../dev/sass/style.sass */
+.section__block__title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* line 197, ../../dev/sass/style.sass */
+.section__block__title_white, .section__block__subtitle_white {
+  color: #ffffff;
+}
+
+/*==========  PARTNERS STYLES  ========== */
+/* line 201, ../../dev/sass/style.sass */
+.section_partners {
+  background-color: #f7f7f7;
+}
+
+/* line 203, ../../dev/sass/style.sass */
+.partners__list__item {
+  -webkit-flex: 1 0 50px;
+      -ms-flex: 1 0 50px;
+          flex: 1 0 50px;
+  height: 60px;
+}
+/* line 206, ../../dev/sass/style.sass */
+.partners__list__item img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  transition: all 0.2s;
+  opacity: 0.7;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 212, ../../dev/sass/style.sass */
+.partners__list__item img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  opacity: 1;
+}
+
+/*==========  SERVICES STYLES  ========== */
+/* line 217, ../../dev/sass/style.sass */
+.services__items {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 224, ../../dev/sass/style.sass */
+.services__item {
+  -webkit-flex: 1 0 200px;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 230, ../../dev/sass/style.sass */
+.services__item__title {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+  color: #D45617;
+}
+
+/* line 235, ../../dev/sass/style.sass */
+.services__item__subtitle {
+  margin-bottom: 1rem;
+}
+
+/* line 237, ../../dev/sass/style.sass */
+.services__item__list {
+  font-size: 1.4rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+/* line 242, ../../dev/sass/style.sass */
+.services__item__list li {
+  margin-bottom: 0.6rem;
+}
+
+/* line 244, ../../dev/sass/style.sass */
+.services__item__show-more {
+  display: none;
+}
+
+/*==========  FOOTER STYLES  ========== */
+/* line 250, ../../dev/sass/style.sass */
+.footer {
+  padding: 4rem 9rem;
+  border-top: 1px solid rgba(200, 200, 200, 0.6);
+  color: #555;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+/* line 260, ../../dev/sass/style.sass */
+.footer__left {
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  font-size: 1.4rem;
+}
+
+/* line 263, ../../dev/sass/style.sass */
+.footer__right {
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  font-size: 2rem;
+  text-align: right;
+}
+
+/* line 267, ../../dev/sass/style.sass */
+.social__item {
+  color: #555;
+}
+/* line 269, ../../dev/sass/style.sass */
+.social__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* */
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* */
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* */
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* */
+}
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* */
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* */
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* */
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* */
+}

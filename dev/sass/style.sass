@@ -1,0 +1,271 @@
+@import "compass/reset"
+@font-face
+  font-family: 'Raleway' /* Гарнитура шрифта */
+  src: url("font/Raleway-Regular.ttf") /* Для остальных браузеров */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400')
+@import "variables"
+@import "typography"
+
+/*==========  GLOBAL STYLES  ========== */
+html
+  font-size: 62.5%
+body
+  font-size: 62.5%
+  font-family: $font
+  background-color: #f7f7f7
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+.wrapper
+  flex: 1
+.section
+  padding: 2rem 0 6rem 0
+.link
+  text-decoration: none
+  transition: all .3s
+  cursor: pointer
+.block_wrapper
+  max-width: 1200px
+  padding-left: 10px
+  padding-right: 10px
+  margin: 0 auto
+.btn
+  background: 0 0
+  border: none
+  border-radius: 2px
+  color: #000
+  height: 36px
+  margin: 0
+  min-width: 64px
+  padding: 0 1.6rem
+  font-weight: 500
+  text-transform: uppercase
+  overflow: hidden
+  transition: background-color .2s
+  outline: none
+  cursor: pointer
+  text-decoration: none
+  vertical-align: middle
+  &:hover
+    background-color: rgba(0, 0, 0, .4)
+    color: #ffffff
+
+/*==========  HEADER STYLES  ========== */
+.header
+  padding: 2rem 0
+.header__mnu
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  align-content: flex-end
+  width: 100%
+  justify-content: flex-end
+.mnu-logo
+  flex: 1 0 200px
+.mnu-logo__img
+  max-width: 100px
+.nav
+  flex: 2 0 200px
+.mnu
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: flex-end
+  align-content: flex-end
+.mnu__item
+  flex: 1 0 60px
+  font-size: 1rem
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 1px
+  text-align: right
+.mnu__item_center
+  text-align: center
+.mnu__item__link
+  color: #333
+  &:hover
+    opacity: .5
+.header__mnu_mobile
+  display: none
+
+
+/*==========  HERO STYLES  ========== */
+.section_hero
+  text-align: center
+  text-transform: uppercase
+.hero-title
+  font-size: 7rem
+  letter-spacing: 1px
+  font-family: $font-secondary
+
+/*==========  PORTFOLIO STYLES  ========== */
+.mnu_portfolio
+  align-items: center
+  border-top: 1px solid #e1e1e1
+  padding: 2rem 0
+  text-align: center
+.portfolio__items
+  position: relative
+  width: 100.1%
+  //width: calc( 100% + 1px )
+  height: 1050px
+  &:after
+    content: ''
+    display: block
+    clear: both
+.portfolio__item, .portfolio_sizer
+  width: 33.333%
+.portfolio__item, .portfolio__item_default
+  height: 280px
+  display: block
+  cursor: pointer
+  float: left
+  padding: 0
+  margin: 0
+  overflow: hidden
+  transition: all .2s
+  &:hover .portfolio__item_overlay
+    background-color: rgba(0,0,0,.4)
+    &:hover
+      .overlay__title
+        visibility: visible
+.portfolio__item_big-horizontal
+  width: 66.666%
+.portfolio__item_big-vertical
+  height: 560px
+.portfolio__item_overlay
+  position: absolute
+  z-index: 10
+  width: 100%
+  transition: all .3s
+  height: 100%
+.overlay__title
+  position: relative
+  text-align: center
+  text-transform: uppercase
+  visibility: hidden
+  color: #fff
+  top: 50%
+  transform: translateY(-50%)
+.portfolio__item__img
+  width: 100%
+  height: auto
+  overflow: hidden
+  vertical-align: middle
+.portfolio__img
+  display: block
+  max-width: 100%
+  height: 100%
+  vertical-align: top
+
+/*==========  WE-DO STYLES  ========== */
+.we-do__item
+  text-align: center
+  flex-basis: 280px
+  padding: 1rem
+.we-do__item__icon
+  margin: 2rem 0 4rem
+  font-size: 3rem
+  color: #dddddd
+.we-do__item__title
+  text-transform: none
+  margin-bottom: 1rem
+.we-do__item__subtitle
+  text-transform: none
+
+/*==========  ABOUT STYLES  ========== */
+.section_about
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-content: flex-start
+  align-items: stretch
+  justify-content: center
+.section__block
+  flex: 1 0 300px
+  padding: 9rem
+.section__block_dark
+  background-color: #2a2a2a
+.section__block_turquoise
+  background-color: #50bab6
+.section__block_lightgrey
+  background-color: #f1f1f1
+.section__block__title
+  font-weight: bold
+  margin-bottom: 2rem
+.section__block__title_white, .section__block__subtitle_white
+  color: #ffffff
+
+/*==========  PARTNERS STYLES  ========== */
+.section_partners
+  background-color: #f7f7f7
+.partners__list__item
+  flex: 1 0 50px
+  height: 60px
+  img
+    filter: grayscale(100%)
+    transition: all .2s
+    opacity: .7
+    max-width: 100%
+    max-height: 100%
+    &:hover
+      filter: grayscale(0%)
+      opacity: 1
+
+/*==========  SERVICES STYLES  ========== */
+.services__items
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-content: flex-start
+  align-items: stretch
+  justify-content: center
+.services__item
+  flex: 1 0 200px
+  margin: 2rem
+  padding: 2rem
+  background-color: #f1f1f1
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+.services__item__title
+  font-weight: bold
+  letter-spacing: 1px
+  margin: 0 0 1rem 0
+  color: #D45617
+.services__item__subtitle
+  margin-bottom: 1rem
+.services__item__list
+  font-size: 1.4rem
+  list-style: disc
+  list-style-position: inside
+  li
+    &
+      margin-bottom: .6rem
+.services__item__show-more
+  display: none
+.services__button
+
+
+/*==========  FOOTER STYLES  ========== */
+.footer
+  padding: 4rem 9rem
+  border-top: 1px solid rgba(200,200,200,.6)
+  color: #555
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  align-items: flex-end
+  justify-content: center
+  align-content: center
+.footer__left
+  flex: 1 0 50%
+  font-size: 1.4rem
+.footer__right
+  flex: 1 0 50%
+  font-size: 2rem
+  text-align: right
+.social__item
+  color: #555
+  &:not(:last-child)
+    margin-right: 1rem
+@import "media"
