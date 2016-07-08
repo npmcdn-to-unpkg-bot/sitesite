@@ -1,7 +1,7 @@
 @import "compass/reset"
 @font-face
   font-family: 'Raleway' /* Гарнитура шрифта */
-  src: url("font/Raleway-Regular.ttf") /* Для остальных браузеров */
+  src: url("font/Raleway-Regular.ttf")
 @import url('https://fonts.googleapis.com/css?family=Oswald:400')
 @import "variables"
 @import "typography"
@@ -29,6 +29,19 @@ body
   padding-left: 10px
   padding-right: 10px
   margin: 0 auto
+.form__message
+  font-size: 1.4rem
+.error_message
+  color: red
+.success_page
+  color: green
+.fixed-menu
+  position: fixed
+  background-color: rgba(255, 255, 255, 1)
+  width: 100%
+  top: 0
+  z-index: 20
+  border-bottom: 1px solid #f1f1f1
 .btn
   background: 0 0
   border: none
@@ -53,6 +66,7 @@ body
 /*==========  HEADER STYLES  ========== */
 .header
   padding: 2rem 0
+  transition: background-color .2s, position .2s, top 0.2s
 .header__mnu
   display: flex
   flex-direction: row
@@ -62,7 +76,7 @@ body
   width: 100%
   justify-content: flex-end
 .mnu-logo
-  flex: 1 0 200px
+  flex: 3 0 100px
 .mnu-logo__img
   max-width: 100px
 .nav
@@ -71,8 +85,8 @@ body
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  align-items: flex-end
-  align-content: flex-end
+  align-items: flex-start
+  align-content: center
 .mnu__item
   flex: 1 0 60px
   font-size: 1rem
@@ -95,7 +109,7 @@ body
   text-align: center
   text-transform: uppercase
 .hero-title
-  font-size: 7rem
+  font-size: 6rem
   letter-spacing: 1px
   font-family: $font-secondary
 
@@ -124,7 +138,7 @@ body
   padding: 0
   margin: 0
   overflow: hidden
-  transition: all .2s
+  transition: opacity .6s
   &:hover .portfolio__item_overlay
     background-color: rgba(0,0,0,.4)
     &:hover
@@ -162,7 +176,7 @@ body
 /*==========  WE-DO STYLES  ========== */
 .we-do__item
   text-align: center
-  flex-basis: 280px
+  flex-basis: 230px
   padding: 1rem
 .we-do__item__icon
   margin: 2rem 0 4rem
@@ -175,7 +189,7 @@ body
   text-transform: none
 
 /*==========  ABOUT STYLES  ========== */
-.section_about
+.section_about, .contacts__wrapper
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -183,7 +197,7 @@ body
   align-items: stretch
   justify-content: center
 .section__block
-  flex: 1 0 300px
+  flex: 1 0 100px
   padding: 9rem
 .section__block_dark
   background-color: #2a2a2a
@@ -194,6 +208,10 @@ body
 .section__block__title
   font-weight: bold
   margin-bottom: 2rem
+.section__block__subtitle
+  margin-bottom: 2rem
+.section_block__subtitle_bold
+  font-weight: bold
 .section__block__title_white, .section__block__subtitle_white
   color: #ffffff
 
@@ -201,8 +219,9 @@ body
 .section_partners
   background-color: #f7f7f7
 .partners__list__item
-  flex: 1 0 50px
+  flex: 1 0 300px
   height: 60px
+  padding: 2rem 0
   img
     filter: grayscale(100%)
     transition: all .2s
@@ -235,16 +254,50 @@ body
 .services__item__subtitle
   margin-bottom: 1rem
 .services__item__list
-  font-size: 1.4rem
-  list-style: disc
-  list-style-position: inside
-  li
-    &
+  ul
+    font-size: 1.4rem
+    list-style: disc
+    list-style-position: inside
+    li
       margin-bottom: .6rem
 .services__item__show-more
   display: none
 .services__button
 
+/*==========  CONTACTS STYLES  ========== */
+.contacts__wrapper
+  margin-top: 4rem
+.section__block_contacts
+  padding: 0
+.section__block_contacts_left
+  flex: 4 0 300px
+.section__block_contacts_right
+  flex: 1 0 240px
+  padding: 0 4rem
+.form
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+.form__group
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+.form__group
+  margin-top: 1rem
+  margin-bottom: 1rem
+.form__group__title
+  font-size: 1.6rem
+  margin-bottom: 0.2rem
+.form__group__input, .form__group__textarea
+  border: 0 solid transparent
+  outline: none
+  padding: .8rem
+.form__group__input
+.form__group__textarea
+  resize: none
+.btn_form
+  width: 34%
+  margin: 0 auto
 
 /*==========  FOOTER STYLES  ========== */
 .footer
