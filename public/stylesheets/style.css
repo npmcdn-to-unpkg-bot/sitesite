@@ -227,8 +227,8 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-align-content: flex-end;
-      -ms-flex-line-pack: end;
+  -ms-flex-line-pack: end;
+          -webkit-align-content: flex-end;
           align-content: flex-end;
   width: 100%;
   -webkit-justify-content: flex-end;
@@ -269,8 +269,8 @@ body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
+  -ms-flex-line-pack: center;
+          -webkit-align-content: center;
           align-content: center;
 }
 
@@ -421,8 +421,8 @@ body {
 /* line 177, ../../dev/sass/style.sass */
 .we-do__item {
   text-align: center;
-  -webkit-flex-basis: 230px;
-      -ms-flex-preferred-size: 230px;
+  -ms-flex-preferred-size: 230px;
+          -webkit-flex-basis: 230px;
           flex-basis: 230px;
   padding: 1rem;
 }
@@ -457,8 +457,8 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
+  -ms-flex-line-pack: start;
+          -webkit-align-content: flex-start;
           align-content: flex-start;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
@@ -554,8 +554,8 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
+  -ms-flex-line-pack: start;
+          -webkit-align-content: flex-start;
           align-content: flex-start;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
@@ -708,8 +708,8 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
+  -ms-flex-line-pack: center;
+          -webkit-align-content: center;
           align-content: center;
 }
 
